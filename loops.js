@@ -18,6 +18,13 @@ function whileLoop(number) {
   }
 }
 
+function maybeTrue() {
+  return Math.random() >= 0.5;
+}
+
 function doWhileLoop(array) {
-  
+  do {
+    array.shift();
+} while (maybeTrue() && array.length > 0);
+return array;
 }
